@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Red Hat Display", sans-serif;
+
+  background: url(./images/pattern-background-desktop.svg) repeat-x;
+  background-color: hsla(225, 100%, 94%);
+}
+
+.main {
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  border-radius: 15px;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  background: url(./images/illustration-hero.svg) no-repeat center center /
+    cover;
+  flex-basis: 150px;
+  border-radius: 15px 15px 0 0;
+}
+
+.text {
+  flex-basis: 150px;
+  text-align: center;
+  padding: 25px;
+  color: hsl(224, 23%, 55%);
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0 0 15px 15px;
+}
+
+.text h1 {
+  color: hsl(229, 37%, 24%);
+}
+
+.plan {
+  background-color: hsla(225, 100%, 94%, 0.4);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 330px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.link {
+  font-size: 14px;
+  font-weight: 700;
+}
+.link:hover {
+  color: hsl(245, 83%, 68%);
+  cursor: pointer;
+  text-decoration: none;
+}
+.plans {
+  display: flex;
+  flex-direction: column;
+  margin-right: 45px;
+  margin-bottom: 10px;
+}
+
+.plans p {
+  margin: 5px 5px;
+}
+
+.price {
+  color: hsl(224, 23%, 55%);
+}
+.AnPlan {
+  color: hsl(229, 37%, 24%);
+  font-weight: 700;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+}
+
+.paybtn {
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin: 5px 10px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.paybtn:hover {
+  background-color: hsl(245, 83%, 68%);
+}
+.cancelbtn {
+  background-color: hsl(225, 100%, 98%, 0.2);
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 15px 25px;
+  margin: 5px 10px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.cancelbtn:hover {
+  color: hsl(229, 37%, 24%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 600px) {
+  .main {
+    width: 80%;
+  }
+
+  .text {
+    text-align: center;
+    padding: 10px;
+  }
+
+  .plan {
+    display: flex;
+    align-items: center;
+
+    width: 90%;
+    padding: 0 5px;
+  }
+
+  .plans {
+    margin-right: 10px;
+  }
+
+  .link {
+    margin-right: 15px;
+  }
+}
